@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Commands</title>
+    <style>
+        body {
+            font-family: 'Cascadia Code', monospace;
+            background-color: #22333D;
+            color: #D9D9D9;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #FF5733; /* Accent color */
+        }
+        h2 {
+            border-bottom: 2px solid #FF5733; /* Accent color */
+        }
+        pre {
+            background-color: #2C3E50; /* Darker background for code */
+            padding: 15px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programming Languages Commands</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Python Commands</h2>
+            <pre><code>Python is a versatile programming language known for its simplicity and readability.
+
+Basic Syntax:
+print: Outputs to the console.
+print("Hello, World!")  # Displays "Hello, World!" on the screen.
+
+Variables:
+x = 10: Assigns value 10 to variable x.
+name = "Alice": Assigns string "Alice" to variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10:
+    print("Greater")  # Executes if x is greater than 10.
+else:
+    print("Smaller")  # Executes if x is not greater than 10.
+
+for: Looping structure to iterate over a sequence.
+for i in range(5):  # Iterates from 0 to 4.
+    print(i)
+
+Functions:
+def: Defines a function to encapsulate code for reusability.
+def greet(name):
+    print("Hello, " + name)  # Greets the user with their name.
+
+Lists:
+my_list = [1, 2, 3]: Creates a list with three integers.
+my_list.append(4): Adds 4 to the end of my_list.</code></pre>
+        </section>
+
+        <section>
+            <h2>Go Commands</h2>
+            <pre><code>Go, also known as Golang, is a statically typed language developed by Google.
+
+Basic Syntax:
+fmt.Println: Outputs to the console.
+fmt.Println("Hello, World!")  # Prints "Hello, World!" to the console.
+
+Variables:
+var x int = 10: Declares a variable x of type int and initializes it to 10.
+name := "Alice": Short variable declaration for string type.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10 {
+    fmt.Println("Greater")  # Executes if x is greater than 10.
+} else {
+    fmt.Println("Smaller")  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for i := 0; i < 5; i++ {  # Iterates from 0 to 4.
+    fmt.Println(i)
+}
+
+Functions:
+func: Defines a function for reusable code.
+func greet(name string) {
+    fmt.Println("Hello, " + name)  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Kotlin Commands</h2>
+            <pre><code>Kotlin is a modern programming language that runs on the Java Virtual Machine (JVM).
+
+Basic Syntax:
+println: Outputs to the console.
+println("Hello, World!")  # Prints "Hello, World!" to the console.
+
+Variables:
+val x: Int = 10: Declares an immutable variable x of type Int.
+var name: String = "Alice": Declares a mutable variable name of type String.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    println("Greater")  # Executes if x is greater than 10.
+} else {
+    println("Smaller")  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (i in 1..5) {  # Iterates from 1 to 5.
+    println(i)
+}
+
+Functions:
+fun: Defines a function for reusable code.
+fun greet(name: String) {
+    println("Hello, $name")  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Scala Commands</h2>
+            <pre><code>Scala is a programming language that combines object-oriented and functional programming paradigms.
+
+Basic Syntax:
+println: Outputs to the console.
+println("Hello, World!")  # Prints "Hello, World!" to the console.
+
+Variables:
+val x: Int = 10: Declares an immutable variable x of type Int.
+var name: String = "Alice": Declares a mutable variable name of type String.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    println("Greater")  # Executes if x is greater than 10.
+} else {
+    println("Smaller")  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (i <- 1 to 5) {  # Iterates from 1 to 5.
+    println(i)
+}
+
+Functions:
+def: Defines a function for reusable code.
+def greet(name: String) {
+    println("Hello, " + name)  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>SQL Commands</h2>
+            <pre><code>SQL (Structured Query Language) is used for managing and querying relational databases.
+
+Basic Syntax:
+SELECT: Retrieves data from a database.
+SELECT * FROM users;  # Selects all columns from the users table.
+
+INSERT: Adds new data to a database.
+INSERT INTO users (name, age) VALUES ('Alice', 30);  # Adds a new user.
+
+UPDATE: Modifies existing data in a database.
+UPDATE users SET age = 31 WHERE name = 'Alice';  # Updates Alice's age.
+
+DELETE: Removes data from a database.
+DELETE FROM users WHERE name = 'Alice';  # Deletes Alice from the users table.</code></pre>
+        </section>
+
+        <section>
+            <h2>NoSQL Commands</h2>
+            <pre><code>NoSQL is a class of database management systems that do not use SQL for data retrieval.
+
+Basic Syntax:
+MongoDB: A popular NoSQL database.
+db.users.find(): Retrieves all users from the users collection.
+db.users.insertOne({ name: "Alice", age: 30 });  # Adds a new user to the collection.
+
+Cassandra: A distributed NoSQL database.
+INSERT INTO users (name, age) VALUES ('Alice', 30);  # Adds a new user.
+
+Redis: An in-memory data structure store.
+SET name "Alice": Sets a key-value pair.
+GET name: Retrieves the value associated with the key name.</code></pre>
+        </section>
+
+        <section>
+            <h2>Rust Commands</h2>
+            <pre><code>Rust is a systems programming language focused on safety and performance.
+
+Basic Syntax:
+println!: Outputs to the console.
+println!("Hello, World!");  # Prints "Hello, World!" to the console.
+
+Variables:
+let x = 10: Declares a variable x with value 10 (immutable).
+let mut name = String::from("Alice");  # Mutable variable.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10 {
+    println!("Greater");  # Executes if x is greater than 10.
+} else {
+    println!("Smaller");  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for i in 0..5 {  # Iterates from 0 to 4.
+    println!("{}", i);
+}
+
+Functions:
+fn: Defines a function for reusable code.
+fn greet(name: &str) {
+    println!("Hello, {}", name);  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Perl Commands</h2>
+            <pre><code>Perl is a high-level programming language known for its text-processing capabilities.
+
+Basic Syntax:
+print: Outputs to the console.
+print("Hello, World!\n");  # Prints "Hello, World!" to the console.
+
+Variables:
+my $x = 10;: Declares a variable x with value 10.
+my $name = "Alice";: Declares a string variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if ($x > 10) {
+    print("Greater\n");  # Executes if x is greater than 10.
+} else {
+    print("Smaller\n");  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (my $i = 0; $i < 5; $i++) {  # Iterates from 0 to 4.
+    print("$i\n");
+}
+
+Functions:
+sub: Defines a function for reusable code.
+sub greet {
+    my ($name) = @_;  # Accepts a parameter.
+    print("Hello, $name\n");  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>JavaScript Commands</h2>
+            <pre><code>JavaScript is a versatile programming language primarily used for web development.
+
+Basic Syntax:
+console.log: Outputs to the console.
+console.log("Hello, World!");  # Prints "Hello, World!" to the console.
+
+Variables:
+let x = 10;: Declares a block-scoped variable x.
+const name = "Alice";: Declares a constant variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    console.log("Greater");  # Executes if x is greater than 10.
+} else {
+    console.log("Smaller");  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (let i = 0; i < 5; i++) {  # Iterates from 0 to 4.
+    console.log(i);
+}
+
+Functions:
+function: Defines a function for reusable code.
+function greet(name) {
+    console.log("Hello, " + name);  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>HTML Commands</h2>
+            <pre><code>HTML (Hypertext Markup Language) is the standard markup language for creating web pages.
+
+Basic Syntax:
+&lt;html&gt;: Root element of an HTML page.
+&lt;head&gt;: Contains meta-information about the document.
+&lt;body&gt;: Contains the content of the document.
+
+Elements:
+&lt;h1&gt;: Defines a top-level heading.
+&lt;p&gt;: Defines a paragraph of text.
+&lt;a href="https://example.com"&gt;: Creates a hyperlink to another page.
+
+Attributes:
+src: Specifies the URL of an image.
+&lt;img src="image.jpg" alt="Description"&gt;  # Displays an image with an alternative text.</code></pre>
+        </section>
+
+        <section>
+            <h2>PHP Commands</h2>
+            <pre><code>PHP (Hypertext Preprocessor) is a server-side scripting language for web development.
+
+Basic Syntax:
+echo: Outputs to the console.
+echo "Hello, World!";  # Prints "Hello, World!" to the console.
+
+Variables:
+$var: Declares a variable.
+$age = 30;: Assigns value 30 to variable age.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if ($age > 18) {
+    echo "Adult";  # Executes if age is greater than 18.
+} else {
+    echo "Minor";  # Executes if age is not greater than 18.
+}
+
+for: Looping structure to iterate.
+for ($i = 0; $i < 5; $i++) {
+    echo $i;  # Outputs numbers from 0 to 4.
+}
+
+Functions:
+function: Defines a function for reusable code.
+function greet($name) {
+    echo "Hello, " . $name;  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Ruby Commands</h2>
+            <pre><code>Ruby is a dynamic, object-oriented programming language.
+
+Basic Syntax:
+puts: Outputs to the console.
+puts "Hello, World!"  # Prints "Hello, World!" to the console.
+
+Variables:
+x = 10: Assigns value 10 to variable x.
+name = "Alice": Assigns string "Alice" to variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10
+    puts "Greater"  # Executes if x is greater than 10.
+else
+    puts "Smaller"  # Executes if x is not greater than 10.
+end
+
+for: Looping structure to iterate.
+for i in 0..4 do  # Iterates from 0 to 4.
+    puts i
+end
+
+Functions:
+def: Defines a function for reusable code.
+def greet(name)
+    puts "Hello, #{name}"  # Greets the user with their name.
+end</code></pre>
+        </section>
+
+        <section>
+            <h2>CSS Commands</h2>
+            <pre><code>CSS (Cascading Style Sheets) is used for styling web pages.
+
+Basic Syntax:
+selector { property: value; }: Defines styles for HTML elements.
+h1 { color: red; }  # Changes h1 text color to red.
+
+Classes and IDs:
+.class: Applies styles to elements with a specific class.
+#id: Applies styles to a specific element with an ID.
+.container { margin: 20px; }  # Styles elements with class "container".
+#header { background-color: blue; }  # Styles the element with ID "header".
+
+Box Model:
+width: Sets the width of an element.
+padding: Space between content and border.
+margin: Space outside the element.</code></pre>
+        </section>
+
+        <section>
+            <h2>Swift Commands</h2>
+            <pre><code>Swift is a powerful programming language developed by Apple for iOS and macOS app development.
+
+Basic Syntax:
+print: Outputs to the console.
+print("Hello, World!")  # Prints "Hello, World!" to the console.
+
+Variables:
+var x = 10: Declares a variable x with value 10.
+let name = "Alice": Declares a constant variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10 {
+    print("Greater")  # Executes if x is greater than 10.
+} else {
+    print("Smaller")  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for i in 0..<5 {  # Iterates from 0 to 4.
+    print(i)
+}
+
+Functions:
+func: Defines a function for reusable code.
+func greet(name: String) {
+    print("Hello, \(name)")  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Swift Playgrounds Commands</h2>
+            <pre><code>Swift Playgrounds is an app for learning Swift in a fun, interactive way.
+
+Basic Syntax:
+print: Outputs to the console.
+print("Hello, World!")  # Prints "Hello, World!" to the console.
+
+Variables:
+var x = 10: Declares a variable x with value 10.
+let name = "Alice": Declares a constant variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10 {
+    print("Greater")  # Executes if x is greater than 10.
+} else {
+    print("Smaller")  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for i in 0..<5 {  # Iterates from 0 to 4.
+    print(i)
+}
+
+Functions:
+func: Defines a function for reusable code.
+func greet(name: String) {
+    print("Hello, \(name)")  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Java Commands</h2>
+            <pre><code>Java is a widely-used programming language known for its portability across platforms.
+
+Basic Syntax:
+System.out.println: Outputs to the console.
+System.out.println("Hello, World!");  # Prints "Hello, World!" to the console.
+
+Variables:
+int x = 10;: Declares an integer variable x and assigns value 10.
+String name = "Alice";: Declares a String variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    System.out.println("Greater");  # Executes if x is greater than 10.
+} else {
+    System.out.println("Smaller");  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (int i = 0; i < 5; i++) {  # Iterates from 0 to 4.
+    System.out.println(i);
+}
+
+Functions:
+public static: Defines a function within a class.
+public static void greet(String name) {
+    System.out.println("Hello, " + name);  # Greets the user with their name.
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>R Commands</h2>
+            <pre><code>R is a programming language and environment for statistical computing.
+
+Basic Syntax:
+print: Outputs to the console.
+print("Hello, World!")  # Prints "Hello, World!" to the console.
+
+Variables:
+x <- 10: Assigns value 10 to variable x using the assignment operator.
+name <- "Alice": Assigns string "Alice" to variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    print("Greater")  # Executes if x is greater than 10.
+} else {
+    print("Smaller")  # Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (i in 1:5) {  # Iterates from 1 to 5.
+    print(i)
+}
+
+Functions:
+function: Defines a function for reusable code.
+greet <- function(name) {
+    print(paste("Hello,", name))  # Greets the user with their name.
+}</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Code Reference Page</p>
+    </footer>
+    
+
+    <section>
+        <h2>Go Commands</h2>
+        <pre><code>Go is a statically typed language known for its simplicity and efficiency.
+
+Basic Syntax:
+fmt.Println: Outputs to the console.
+fmt.Println("Hello, World!")  // Prints "Hello, World!" to the console.
+
+Variables:
+var x int = 10: Declares a variable x of type int.
+name := "Alice": Declares and assigns value "Alice" to variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10 {
+    fmt.Println("Greater")  // Executes if x is greater than 10.
+} else {
+    fmt.Println("Smaller")  // Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for i := 0; i < 5; i++ {  // Iterates from 0 to 4.
+    fmt.Println(i)
+}
+
+Functions:
+func: Defines a function for reusable code.
+func greet(name string) {
+    fmt.Println("Hello, " + name)  // Greets the user with their name.
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>Kotlin Commands</h2>
+        <pre><code>Kotlin is a modern, statically typed language that is fully interoperable with Java.
+
+Basic Syntax:
+println: Outputs to the console.
+println("Hello, World!")  // Prints "Hello, World!" to the console.
+
+Variables:
+val x: Int = 10: Declares a read-only variable x of type Int.
+var name: String = "Alice": Declares a mutable variable name of type String.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    println("Greater")  // Executes if x is greater than 10.
+} else {
+    println("Smaller")  // Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (i in 0 until 5) {  // Iterates from 0 to 4.
+    println(i)
+}
+
+Functions:
+fun: Defines a function for reusable code.
+fun greet(name: String) {
+    println("Hello, $name")  // Greets the user with their name.
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>Scala Commands</h2>
+        <pre><code>Scala is a versatile programming language that blends object-oriented and functional programming.
+
+Basic Syntax:
+println: Outputs to the console.
+println("Hello, World!")  // Prints "Hello, World!" to the console.
+
+Variables:
+var x: Int = 10: Declares a mutable variable x of type Int.
+val name: String = "Alice": Declares an immutable variable name of type String.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    println("Greater")  // Executes if x is greater than 10.
+} else {
+    println("Smaller")  // Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (i <- 0 until 5) {  // Iterates from 0 to 4.
+    println(i)
+}
+
+Functions:
+def: Defines a function for reusable code.
+def greet(name: String): Unit = {
+    println(s"Hello, $name")  // Greets the user with their name.
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>SQL Commands</h2>
+        <pre><code>SQL (Structured Query Language) is used for managing and querying relational databases.
+
+Basic Syntax:
+SELECT: Retrieves data from a database.
+SELECT * FROM users;  -- Selects all columns from the users table.
+
+INSERT: Adds new data to a table.
+INSERT INTO users (name, age) VALUES ('Alice', 30);  -- Inserts a new user.
+
+UPDATE: Modifies existing data in a table.
+UPDATE users SET age = 31 WHERE name = 'Alice';  -- Updates Alice's age.
+
+DELETE: Removes data from a table.
+DELETE FROM users WHERE name = 'Alice';  -- Deletes the user named Alice.</code></pre>
+    </section>
+
+    <section>
+        <h2>NoSQL Commands</h2>
+        <pre><code>NoSQL databases are designed for unstructured data and flexible schema.
+
+Basic Syntax:
+db.collection.find: Retrieves documents from a collection.
+db.users.find({name: 'Alice'});  // Finds users with the name Alice.
+
+db.collection.insert: Adds a new document to a collection.
+db.users.insert({name: 'Alice', age: 30});  // Inserts a new user.
+
+db.collection.update: Modifies an existing document.
+db.users.update({name: 'Alice'}, {$set: {age: 31}});  // Updates Alice's age.
+
+db.collection.remove: Deletes a document from a collection.
+db.users.remove({name: 'Alice'});  // Deletes the user named Alice.</code></pre>
+    </section>
+
+    <section>
+        <h2>Rust Commands</h2>
+        <pre><code>Rust is a systems programming language focused on safety and performance.
+
+Basic Syntax:
+println!: Outputs to the console.
+println!("Hello, World!");  // Prints "Hello, World!" to the console.
+
+Variables:
+let x = 10: Declares a variable x.
+let name = "Alice": Declares a variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10 {
+    println!("Greater");  // Executes if x is greater than 10.
+} else {
+    println!("Smaller");  // Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for i in 0..5 {  // Iterates from 0 to 4.
+    println!("{}", i);
+}
+
+Functions:
+fn: Defines a function for reusable code.
+fn greet(name: &str) {
+    println!("Hello, {}", name);  // Greets the user with their name.
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>Node.js Commands</h2>
+        <pre><code>Node.js is a runtime environment that allows you to run JavaScript on the server-side.
+
+Basic Syntax:
+console.log: Outputs to the console.
+console.log("Hello, World!");  // Prints "Hello, World!" to the console.
+
+Variables:
+let x = 10;: Declares a block-scoped variable x.
+const name = "Alice";: Declares a constant variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    console.log("Greater");  // Executes if x is greater than 10.
+} else {
+    console.log("Smaller");  // Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (let i = 0; i < 5; i++) {  // Iterates from 0 to 4.
+    console.log(i);
+}
+
+Functions:
+function: Defines a function for reusable code.
+function greet(name) {
+    console.log("Hello, " + name);  // Greets the user with their name.
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>.NET Commands</h2>
+        <pre><code>.NET is a framework for building applications for various platforms using different languages.
+
+Basic Syntax (C#):
+Console.WriteLine: Outputs to the console.
+Console.WriteLine("Hello, World!");  // Prints "Hello, World!" to the console.
+
+Variables:
+int x = 10;: Declares an integer variable x.
+string name = "Alice";: Declares a string variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    Console.WriteLine("Greater");  // Executes if x is greater than 10.
+} else {
+    Console.WriteLine("Smaller");  // Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (int i = 0; i < 5; i++) {  // Iterates from 0 to 4.
+    Console.WriteLine(i);
+}
+
+Functions:
+void: Defines a function for reusable code.
+void Greet(string name) {
+    Console.WriteLine("Hello, " + name);  // Greets the user with their name.
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>Arduino Commands</h2>
+        <pre><code>Arduino is an open-source electronics platform based on easy-to-use hardware and software.
+
+Basic Syntax:
+Serial.begin: Initializes serial communication.
+Serial.begin(9600);  // Starts serial communication at 9600 bps.
+
+Variables:
+int x = 10;: Declares an integer variable x.
+String name = "Alice";: Declares a string variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if (x > 10) {
+    Serial.println("Greater");  // Executes if x is greater than 10.
+} else {
+    Serial.println("Smaller");  // Executes if x is not greater than 10.
+}
+
+for: Looping structure to iterate.
+for (int i = 0; i < 5; i++) {  // Iterates from 0 to 4.
+    Serial.println(i);
+}
+
+Functions:
+void: Defines a function for reusable code.
+void greet(String name) {
+    Serial.print("Hello, ");  // Greets the user with their name.
+    Serial.println(name);
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>Raspberry Pi Commands</h2>
+        <pre><code>Raspberry Pi is a small computer that can be used for various projects and programming.
+
+Basic Syntax (Python):
+print: Outputs to the console.
+print("Hello, World!")  // Prints "Hello, World!" to the console.
+
+Variables:
+x = 10: Declares a variable x.
+name = "Alice": Declares a variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10:
+    print("Greater")  # Executes if x is greater than 10.
+else:
+    print("Smaller")  # Executes if x is not greater than 10.
+
+for: Looping structure to iterate.
+for i in range(5):  # Iterates from 0 to 4.
+    print(i)
+
+Functions:
+def: Defines a function for reusable code.
+def greet(name):
+    print("Hello, " + name)  # Greets the user with their name.
+}</code></pre>
+    </section>
+
+    <section>
+        <h2>MongoDB Commands</h2>
+        <pre><code>MongoDB is a NoSQL database that uses documents in BSON format.
+
+Basic Syntax:
+db.collection.find: Retrieves documents from a collection.
+db.users.find({name: 'Alice'});  // Finds users with the name Alice.
+
+db.collection.insert: Adds a new document to a collection.
+db.users.insert({name: 'Alice', age: 30});  // Inserts a new user.
+
+db.collection.update: Modifies an existing document.
+db.users.update({name: 'Alice'}, {$set: {age: 31}});  // Updates Alice's age.
+
+db.collection.remove: Deletes a document from a collection.
+db.users.remove({name: 'Alice'});  // Deletes the user named Alice.</code></pre>
+    </section>
+
+    <section>
+        <h2>MatLab Commands</h2>
+        <pre><code>MatLab is a programming environment for numerical computing.
+
+Basic Syntax:
+disp: Outputs to the console.
+disp('Hello, World!');  % Prints "Hello, World!" to the console.
+
+Variables:
+x = 10;: Declares a variable x.
+name = 'Alice';: Declares a variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10
+    disp('Greater');  % Executes if x is greater than 10.
+else
+    disp('Smaller');  % Executes if x is not greater than 10.
+end
+
+for: Looping structure to iterate.
+for i = 1:5  % Iterates from 1 to 5.
+    disp(i);
+end
+
+Functions:
+function: Defines a function for reusable code.
+function greet(name)
+    disp(['Hello, ', name]);  % Greets the user with their name.
+end</code></pre>
+    </section>
+
+    <section>
+        <h2>Octave Commands</h2>
+        <pre><code>Octave is a high-level programming language primarily intended for numerical computations.
+
+Basic Syntax:
+disp: Outputs to the console.
+disp('Hello, World!');  % Prints "Hello, World!" to the console.
+
+Variables:
+x = 10;: Declares a variable x.
+name = 'Alice';: Declares a variable name.
+
+Control Structures:
+if, else: Conditional statements that execute based on a condition.
+if x > 10
+    disp('Greater');  % Executes if x is greater than 10.
+else
+    disp('Smaller');  % Executes if x is not greater than 10.
+end
+
+for: Looping structure to iterate.
+for i = 1:5  % Iterates from 1 to 5.
+    disp(i);
+end
+
+Functions:
+function: Defines a function for reusable code.
+function greet(name)
+    disp(['Hello, ', name]);  % Greets the user with their name.
+end</code></pre>
+    </section>
+
+    <footer>
+        <p>© 2024 Code Reference Page</p>
+    </footer>
+</body>
+</html>
+

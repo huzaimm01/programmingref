@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Commands Reference</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cascadia Code', monospace;
+            background-color: #D9D9D9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #555;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Coding Commands Reference</h1>
+</header>
+
+<main>
+
+    <!-- C Section -->
+    <section class="section" id="c">
+        <h2>C</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Compile a C Program:</strong>
+                <pre><code>gcc myProgram.c -o myProgram</code></pre>
+                Compiles the C program into an executable named `myProgram`.
+            </li>
+            <li>
+                <strong>Run a C Program:</strong>
+                <pre><code>./myProgram</code></pre>
+                Executes the compiled C program.
+            </li>
+            <li>
+                <strong>Include a Header File:</strong>
+                <pre><code>#include &lt;stdio.h&gt;</code></pre>
+                Includes the standard I/O library for input and output functions.
+            </li>
+            <li>
+                <strong>Declare a Function:</strong>
+                <pre><code>int add(int a, int b) { return a + b; }</code></pre>
+                Defines a function to add two integers.
+            </li>
+        </ul>
+    </section>
+
+    <!-- C++ Section -->
+    <section class="section" id="cpp">
+        <h2>C++</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Compile a C++ Program:</strong>
+                <pre><code>g++ myProgram.cpp -o myProgram</code></pre>
+                Compiles the C++ program into an executable named `myProgram`.
+            </li>
+            <li>
+                <strong>Run a C++ Program:</strong>
+                <pre><code>./myProgram</code></pre>
+                Executes the compiled C++ program.
+            </li>
+            <li>
+                <strong>Include a Library:</strong>
+                <pre><code>#include &lt;iostream&gt;</code></pre>
+                Includes the I/O stream library for input and output operations.
+            </li>
+            <li>
+                <strong>Defining a Class:</strong>
+                <pre><code>class MyClass { public: void myFunction(); };</code></pre>
+                Defines a simple class with a public member function.
+            </li>
+        </ul>
+    </section>
+
+    <!-- C# Section -->
+    <section class="section" id="csharp">
+        <h2>C#</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Create a New C# Project:</strong>
+                <pre><code>dotnet new console -n MyApp</code></pre>
+                Creates a new console application named `MyApp`.
+            </li>
+            <li>
+                <strong>Run the Application:</strong>
+                <pre><code>dotnet run</code></pre>
+                Runs the currently active C# application.
+            </li>
+            <li>
+                <strong>Using a Namespace:</strong>
+                <pre><code>using System;</code></pre>
+                Includes the `System` namespace for basic functionality.
+            </li>
+            <li>
+                <strong>Defining a Method:</strong>
+                <pre><code>public void Greet() { Console.WriteLine("Hello!"); }</code></pre>
+                Defines a method to print a greeting message.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Java Section -->
+    <section class="section" id="java">
+        <h2>Java</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Compile a Java Program:</strong>
+                <pre><code>javac MyProgram.java</code></pre>
+                Compiles the Java program into bytecode.
+            </li>
+            <li>
+                <strong>Run a Java Program:</strong>
+                <pre><code>java MyProgram</code></pre>
+                Executes the compiled Java program.
+            </li>
+            <li>
+                <strong>Import a Package:</strong>
+                <pre><code>import java.util.ArrayList;</code></pre>
+                Imports the `ArrayList` class from the `java.util` package.
+            </li>
+            <li>
+                <strong>Defining a Class:</strong>
+                <pre><code>public class MyClass { public void greet() { System.out.println("Hello!"); } }</code></pre>
+                Defines a class with a method to print a greeting message.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Arduino Section -->
+    <section class="section" id="arduino">
+        <h2>Arduino</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Initialize Serial Communication:</strong>
+                <pre><code>Serial.begin(9600);</code></pre>
+                Starts serial communication at 9600 bps.
+            </li>
+            <li>
+                <strong>Declare a Variable:</strong>
+                <pre><code>int x = 10;</code></pre>
+                Declares an integer variable x.
+            </li>
+            <li>
+                <strong>If Statement:</strong>
+                <pre><code>if (x > 10) { Serial.println("Greater"); }</code></pre>
+                Executes if x is greater than 10.
+            </li>
+            <li>
+                <strong>For Loop:</strong>
+                <pre><code>for (int i = 0; i < 5; i++) { Serial.println(i); }</code></pre>
+                Iterates from 0 to 4 and prints the value.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Raspberry Pi Section -->
+    <section class="section" id="raspberry-pi">
+        <h2>Raspberry Pi</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Print to Console:</strong>
+                <pre><code>print("Hello, World!")</code></pre>
+                Prints "Hello, World!" to the console.
+            </li>
+            <li>
+                <strong>Declare a Variable:</strong>
+                <pre><code>x = 10</code></pre>
+                Declares a variable x.
+            </li>
+            <li>
+                <strong>If Statement:</strong>
+                <pre><code>if x > 10:\n    print("Greater")</code></pre>
+                Executes if x is greater than 10.
+            </li>
+            <li>
+                <strong>For Loop:</strong>
+                <pre><code>for i in range(5):\n    print(i)</code></pre>
+                Iterates from 0 to 4 and prints the value.
+            </li>
+        </ul>
+    </section>
+
+    <!-- MongoDB Section -->
+    <section class="section" id="mongodb">
+        <h2>MongoDB</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Find Documents:</strong>
+                <pre><code>db.collection.find({name: 'Alice'})</code></pre>
+                Finds documents with the name Alice.
+            </li>
+            <li>
+                <strong>Insert Document:</strong>
+                <pre><code>db.collection.insert({name: 'Alice', age: 30})</code></pre>
+                Inserts a new document for Alice.
+            </li>
+            <li>
+                <strong>Update Document:</strong>
+                <pre><code>db.collection.update({name: 'Alice'}, {$set: {age: 31}})</code></pre>
+                Updates Alice's age to 31.
+            </li>
+            <li>
+                <strong>Delete Document:</strong>
+                <pre><code>db.collection.remove({name: 'Alice'})</code></pre>
+                Removes documents with the name Alice.
+            </li>
+        </ul>
+    </section>
+
+    <!-- MySQL Section -->
+    <section class="section" id="mysql">
+        <h2>MySQL</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Select Data:</strong>
+                <pre><code>SELECT * FROM users;</code></pre>
+                Retrieves all data from the users table.
+            </li>
+            <li>
+                <strong>Insert Data:</strong>
+                <pre><code>INSERT INTO users (name, age) VALUES ('Alice', 30);</code></pre>
+                Inserts a new user named Alice.
+            </li>
+            <li>
+                <strong>Update Data:</strong>
+                <pre><code>UPDATE users SET age = 31 WHERE name = 'Alice';</code></pre>
+                Updates Alice's age to 31.
+            </li>
+            <li>
+                <strong>Delete Data:</strong>
+                <pre><code>DELETE FROM users WHERE name = 'Alice';</code></pre>
+                Deletes the user named Alice.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Huzaim Malik. All rights reserved.</p>
+    </footer>
+
+</main>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>

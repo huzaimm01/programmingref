@@ -4,51 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Commands Reference</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Cascadia Code', monospace;
             background-color: #D9D9D9;
+            color: #22333D;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #333;
+        header, footer {
+            background-color: #22333D;
             color: white;
-            padding: 10px 20px;
             text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1em 0;
         }
         h2 {
-            color: #333;
+            color: #C82333; /* Accent color */
         }
-        h3 {
-            color: #555;
+        .section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #C82333; /* Accent color */
+            border-radius: 5px;
         }
-        pre {
-            background-color: #f8f8f8;
-            padding: 10px;
-            border-radius: 3px;
-            overflow-x: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -173,126 +156,346 @@
         </ul>
     </section>
 
-    <!-- Arduino Section -->
-    <section class="section" id="arduino">
-        <h2>Arduino</h2>
+    <!-- JavaScript Section -->
+    <section class="section" id="javascript">
+        <h2>JavaScript</h2>
         <h3>Basic Commands</h3>
         <ul>
             <li>
-                <strong>Initialize Serial Communication:</strong>
-                <pre><code>Serial.begin(9600);</code></pre>
-                Starts serial communication at 9600 bps.
+                <strong>Print to Console:</strong>
+                <pre><code>console.log("Hello, World!");</code></pre>
+                Outputs the string to the console.
             </li>
             <li>
                 <strong>Declare a Variable:</strong>
-                <pre><code>int x = 10;</code></pre>
-                Declares an integer variable x.
+                <pre><code>let x = 10;</code></pre>
+                Declares a variable `x` and initializes it to 10.
             </li>
             <li>
-                <strong>If Statement:</strong>
-                <pre><code>if (x > 10) { Serial.println("Greater"); }</code></pre>
-                Executes if x is greater than 10.
+                <strong>Define a Function:</strong>
+                <pre><code>function greet() { return "Hello!"; }</code></pre>
+                Defines a function that returns a greeting string.
             </li>
             <li>
-                <strong>For Loop:</strong>
-                <pre><code>for (int i = 0; i < 5; i++) { Serial.println(i); }</code></pre>
-                Iterates from 0 to 4 and prints the value.
+                <strong>Add an Event Listener:</strong>
+                <pre><code>button.addEventListener("click", function() { alert("Clicked!"); });</code></pre>
+                Attaches a click event listener to a button.
             </li>
         </ul>
     </section>
 
-    <!-- Raspberry Pi Section -->
-    <section class="section" id="raspberry-pi">
-        <h2>Raspberry Pi</h2>
+    <!-- HTML Section -->
+    <section class="section" id="html">
+        <h2>HTML</h2>
+        <h3>Basic Tags</h3>
+        <ul>
+            <li>
+                <strong>HTML Document Structure:</strong>
+                <pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;/html&gt;</code></pre>
+                Defines the basic structure of an HTML document.
+            </li>
+            <li>
+                <strong>Creating a Link:</strong>
+                <pre><code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</code></pre>
+                Creates a hyperlink to `example.com`.
+            </li>
+            <li>
+                <strong>Creating an Image:</strong>
+                <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+                Embeds an image in the document.
+            </li>
+            <li>
+                <strong>Creating a List:</strong>
+                <pre><code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ul&gt;</code></pre>
+                Creates an unordered list with one item.
+            </li>
+        </ul>
+    </section>
+
+    <!-- CSS Section -->
+    <section class="section" id="css">
+        <h2>CSS</h2>
+        <h3>Basic Properties</h3>
+        <ul>
+            <li>
+                <strong>Change Text Color:</strong>
+                <pre><code>color: red;</code></pre>
+                Sets the text color to red.
+            </li>
+            <li>
+                <strong>Change Background Color:</strong>
+                <pre><code>background-color: blue;</code></pre>
+                Sets the background color to blue.
+            </li>
+            <li>
+                <strong>Set Font Size:</strong>
+                <pre><code>font-size: 16px;</code></pre>
+                Sets the font size to 16 pixels.
+            </li>
+            <li>
+                <strong>Set Margin:</strong>
+                <pre><code>margin: 10px;</code></pre>
+                Sets a margin of 10 pixels.
+            </li>
+        </ul>
+    </section>
+
+        <!-- PHP Section -->
+    <section class="section" id="php">
+        <h2>PHP</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Start a PHP Block:</strong>
+                <pre><code>&lt;?php</code></pre>
+                Begins a PHP script.
+            </li>
+            <li>
+                <strong>Echo a String:</strong>
+                <pre><code>echo "Hello, World!";</code></pre>
+                Outputs the string "Hello, World!".
+            </li>
+            <li>
+                <strong>Define a Function:</strong>
+                <pre><code>function greet() { return "Hello!"; }</code></pre>
+                Defines a function that returns a greeting.
+            </li>
+            <li>
+                <strong>Create a Variable:</strong>
+                <pre><code>$name = "John";</code></pre>
+                Creates a variable and assigns it a value.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Ruby Section -->
+    <section class="section" id="ruby">
+        <h2>Ruby</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Print to Console:</strong>
+                <pre><code>puts "Hello, World!"</code></pre>
+                Outputs "Hello, World!" to the console.
+            </li>
+            <li>
+                <strong>Define a Method:</strong>
+                <pre><code>def greet; puts "Hello!"; end</code></pre>
+                Defines a method to print a greeting.
+            </li>
+            <li>
+                <strong>Create a Variable:</strong>
+                <pre><code>name = "John"</code></pre>
+                Creates a variable and assigns it a value.
+            </li>
+            <li>
+                <strong>Loop through an Array:</strong>
+                <pre><code>array.each { |item| puts item }</code></pre>
+                Loops through an array and prints each item.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Swift Section -->
+    <section class="section" id="swift">
+        <h2>Swift</h2>
         <h3>Basic Commands</h3>
         <ul>
             <li>
                 <strong>Print to Console:</strong>
                 <pre><code>print("Hello, World!")</code></pre>
-                Prints "Hello, World!" to the console.
+                Outputs "Hello, World!" to the console.
             </li>
             <li>
-                <strong>Declare a Variable:</strong>
-                <pre><code>x = 10</code></pre>
-                Declares a variable x.
+                <strong>Define a Function:</strong>
+                <pre><code>func greet() { print("Hello!") }</code></pre>
+                Defines a function that prints a greeting.
             </li>
             <li>
-                <strong>If Statement:</strong>
-                <pre><code>if x > 10:\n    print("Greater")</code></pre>
-                Executes if x is greater than 10.
+                <strong>Create a Variable:</strong>
+                <pre><code>var name = "John"</code></pre>
+                Creates a variable and assigns it a value.
             </li>
             <li>
-                <strong>For Loop:</strong>
-                <pre><code>for i in range(5):\n    print(i)</code></pre>
-                Iterates from 0 to 4 and prints the value.
+                <strong>Control Flow (If):</strong>
+                <pre><code>if condition { print("Condition met") }</code></pre>
+                Checks a condition and prints a message if true.
             </li>
         </ul>
     </section>
 
-    <!-- MongoDB Section -->
-    <section class="section" id="mongodb">
-        <h2>MongoDB</h2>
+    <!-- Kotlin Section -->
+    <section class="section" id="kotlin">
+        <h2>Kotlin</h2>
         <h3>Basic Commands</h3>
         <ul>
             <li>
-                <strong>Find Documents:</strong>
-                <pre><code>db.collection.find({name: 'Alice'})</code></pre>
-                Finds documents with the name Alice.
+                <strong>Print to Console:</strong>
+                <pre><code>println("Hello, World!")</code></pre>
+                Outputs "Hello, World!" to the console.
             </li>
             <li>
-                <strong>Insert Document:</strong>
-                <pre><code>db.collection.insert({name: 'Alice', age: 30})</code></pre>
-                Inserts a new document for Alice.
+                <strong>Define a Function:</strong>
+                <pre><code>fun greet() { println("Hello!") }</code></pre>
+                Defines a function that prints a greeting.
             </li>
             <li>
-                <strong>Update Document:</strong>
-                <pre><code>db.collection.update({name: 'Alice'}, {$set: {age: 31}})</code></pre>
-                Updates Alice's age to 31.
+                <strong>Create a Variable:</strong>
+                <pre><code>val name = "John"</code></pre>
+                Creates a read-only variable and assigns it a value.
             </li>
             <li>
-                <strong>Delete Document:</strong>
-                <pre><code>db.collection.remove({name: 'Alice'})</code></pre>
-                Removes documents with the name Alice.
+                <strong>Control Flow (If):</strong>
+                <pre><code>if (condition) { println("Condition met") }</code></pre>
+                Checks a condition and prints a message if true.
             </li>
         </ul>
     </section>
 
-    <!-- MySQL Section -->
-    <section class="section" id="mysql">
-        <h2>MySQL</h2>
+    <!-- Go Section -->
+    <section class="section" id="go">
+        <h2>Go</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Print to Console:</strong>
+                <pre><code>fmt.Println("Hello, World!")</code></pre>
+                Outputs "Hello, World!" to the console.
+            </li>
+            <li>
+                <strong>Define a Function:</strong>
+                <pre><code>func greet() { fmt.Println("Hello!") }</code></pre>
+                Defines a function that prints a greeting.
+            </li>
+            <li>
+                <strong>Create a Variable:</strong>
+                <pre><code>var name = "John"</code></pre>
+                Creates a variable and assigns it a value.
+            </li>
+            <li>
+                <strong>Control Flow (If):</strong>
+                <pre><code>if condition { fmt.Println("Condition met") }</code></pre>
+                Checks a condition and prints a message if true.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Rust Section -->
+    <section class="section" id="rust">
+        <h2>Rust</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Print to Console:</strong>
+                <pre><code>println!("Hello, World!");</code></pre>
+                Outputs "Hello, World!" to the console.
+            </li>
+            <li>
+                <strong>Define a Function:</strong>
+                <pre><code>fn greet() { println!("Hello!"); }</code></pre>
+                Defines a function that prints a greeting.
+            </li>
+            <li>
+                <strong>Create a Variable:</strong>
+                <pre><code>let name = "John";</code></pre>
+                Creates a variable and assigns it a value.
+            </li>
+            <li>
+                <strong>Control Flow (If):</strong>
+                <pre><code>if condition { println!("Condition met"); }</code></pre>
+                Checks a condition and prints a message if true.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Shell Section -->
+    <section class="section" id="shell">
+        <h2>Shell (Bash)</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>List Files:</strong>
+                <pre><code>ls -l</code></pre>
+                Lists files in the current directory with details.
+            </li>
+            <li>
+                <strong>Change Directory:</strong>
+                <pre><code>cd /path/to/directory</code></pre>
+                Changes the current directory to the specified path.
+            </li>
+            <li>
+                <strong>Copy a File:</strong>
+                <pre><code>cp source.txt destination.txt</code></pre>
+                Copies `source.txt` to `destination.txt`.
+            </li>
+            <li>
+                <strong>Remove a File:</strong>
+                <pre><code>rm file.txt</code></pre>
+                Deletes `file.txt`.
+            </li>
+        </ul>
+    </section>
+
+    <!-- SQL Section -->
+    <section class="section" id="sql">
+        <h2>SQL</h2>
         <h3>Basic Commands</h3>
         <ul>
             <li>
                 <strong>Select Data:</strong>
-                <pre><code>SELECT * FROM users;</code></pre>
-                Retrieves all data from the users table.
+                <pre><code>SELECT * FROM table_name;</code></pre>
+                Retrieves all records from the specified table.
             </li>
             <li>
                 <strong>Insert Data:</strong>
-                <pre><code>INSERT INTO users (name, age) VALUES ('Alice', 30);</code></pre>
-                Inserts a new user named Alice.
+                <pre><code>INSERT INTO table_name (column1, column2) VALUES (value1, value2);</code></pre>
+                Inserts a new record into the specified table.
             </li>
             <li>
                 <strong>Update Data:</strong>
-                <pre><code>UPDATE users SET age = 31 WHERE name = 'Alice';</code></pre>
-                Updates Alice's age to 31.
+                <pre><code>UPDATE table_name SET column1 = value1 WHERE condition;</code></pre>
+                Updates existing records in the specified table.
             </li>
             <li>
                 <strong>Delete Data:</strong>
-                <pre><code>DELETE FROM users WHERE name = 'Alice';</code></pre>
-                Deletes the user named Alice.
+                <pre><code>DELETE FROM table_name WHERE condition;</code></pre>
+                Deletes records from the specified table based on the condition.
             </li>
         </ul>
     </section>
 
-    <!-- Footer -->
+    <!-- R Section -->
+    <section class="section" id="r">
+        <h2>R</h2>
+        <h3>Basic Commands</h3>
+        <ul>
+            <li>
+                <strong>Print to Console:</strong>
+                <pre><code>print("Hello, World!")</code></pre>
+                Outputs "Hello, World!" to the console.
+            </li>
+            <li>
+                <strong>Define a Function:</strong>
+                <pre><code>greet <- function() { print("Hello!") }</code></pre>
+                Defines a function that prints a greeting.
+            </li>
+            <li>
+                <strong>Create a Variable:</strong>
+                <pre><code>name <- "John"</code></pre>
+                Creates a variable and assigns it a value.
+            </li>
+            <li>
+                <strong>Control Flow (If):</strong>
+                <pre><code>if (condition) { print("Condition met") }</code></pre>
+                Checks a condition and prints a message if true.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Conclusion Section -->
     <footer>
-        <p>&copy; 2024 Huzaim Malik. All rights reserved.</p>
+        <p>For more programming resources, visit <a href="https://www.codecademy.com">Codecademy</a> or <a href="https://www.freecodecamp.org">FreeCodeCamp</a>.</p>
     </footer>
 
-</main>
-
-<!-- Scripts -->
-<script src="script.js"></script>
 </body>
 </html>
